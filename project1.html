@@ -1,0 +1,120 @@
+<style>
+    body{
+        background-color: #F6F9FE;
+        font-family: Helvetica;
+    }
+
+    .margin-left{
+        margin-left: 15px;
+    }
+
+    .margin-right{
+        margin-right: 15px;
+    }
+
+    /* .menu{
+        float: right;
+    } */
+
+    /* .logo {
+        margin-left: 25px;
+    } */
+
+    .float-right{
+        float: right;
+    }
+
+    #join{
+        border: 1px;
+        background-color: #372865;
+        color: white;
+        padding: 16px 20px 16px 20px;
+        border-radius: 5px;
+        margin-left: 0px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #707072;
+        font-size: 16px;
+    }
+
+    a:link{
+        color: #707072;
+    }
+
+    a:visited{
+        color: #707072;
+    }
+
+    a:hover {
+        border: 1px;
+        background-color: #F0AFC7;
+        color: black;
+        padding: 10px;
+    }
+
+    a:active{
+        border: 1px;
+        background-color: #F0AFC7;
+        color: black;
+        padding: 10px;
+    }
+
+    .smaller-image{
+        width: 400px;
+    }
+
+    .margin-top {
+        margin-top: 30px;
+    }
+
+    .navigationBar {
+        margin: 40px 50px 0px 50px;
+    }
+    nav {
+        float: right;
+
+    }
+    /* refer to element inside another element like a tag nested in nav tag */
+    nav a{
+        padding-right: 20px;
+    }
+
+    p {
+        display: inline-block;
+        padding: 15px;
+    }
+</style>
+
+<!DOCTYPE html5>
+<html>
+    <head> 
+        <title>Commune</title>
+    </head>
+    <body>
+        <div class="navigationBar" >
+            <nav class="menu">
+                <!-- <a href="#" class="margin-left margin-right">Features</a> -->
+                <a href="#" >Features</a>
+                <!-- <a href="#" class="margin-left margin-right">Affiliates</a> -->
+                <a href="#" >Affiliates</a>
+                <!-- <a href="#" class="margin-left margin-right">Pricing</a> -->
+                <a href="#" >Pricing</a>
+                <!-- <a href="#" class="margin-left margin-right">Communities</a> -->
+                <a href="#" >Communities</a>
+                <a href="#" class="margin-left margin-right" id="join">Join Waitlist</a>
+            </nav>
+
+            <img class="logo" src="Assets/Logo.svg" alt="Logo" >
+        </div>
+        
+        <!-- <img class="smaller-image margin-top" src="Assets/Illustration.png" alt="Illust" align="right"> -->
+        <p class="float-left margin-top">
+            <img src="Assets/Illustration.png" class = "smaller-image margin-top float-right" >
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        </p>
+            
+    </body>
+</html>
+

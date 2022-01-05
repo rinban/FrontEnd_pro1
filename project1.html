@@ -81,10 +81,22 @@
         padding-right: 20px;
     }
 
-    p {
-        display: inline-block;
-        padding: 15px;
+    .content {
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
     }
+
+    section{
+        display: inline-block;
+    }
+
+    /* p.head1 {
+
+        float: center;
+
+    }   */
+
 </style>
 
 <!DOCTYPE html5>
@@ -109,12 +121,38 @@
             <img class="logo" src="Assets/Logo.svg" alt="Logo" >
         </div>
         
-        <!-- <img class="smaller-image margin-top" src="Assets/Illustration.png" alt="Illust" align="right"> -->
-        <p class="float-left margin-top">
-            <img src="Assets/Illustration.png" class = "smaller-image margin-top float-right" >
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        </p>
+        <section class="content">
+            <div>
+            <p class="float-left margin-top head1">
+                we are now allowing early-access for users. 
+                Learn more. <br>
+            </p>
+            <h1 class="float-left margin-top">
+                Build a highly engaged community with no effort. <br>
+            </h1>
+            <p class="float-left margin-top">
+                Commune offers the tools you need to build a highly engaged community with
+                with little to no effort. Simply setup your Commune workspace, and manage everything 
+                from members to content from one central dashboard.
+             </p>
+            </div>
+            <div>
+                <img src="Assets/Illustration.png" class = "smaller-image margin-top float-right" >
+            </div> 
+
+        </section> 
             
+            
+
+            <footer class="margin-top">
+                <a href="https://www.atlassian.com/"><img src="Assets/Atlassian Icon.svg"></a>
+                <a href="https://www.behance.net/"><img src="Assets/Behance Icon.svg"></a>
+                <a href="https://www.bing.com/"><img src="Assets/Bing Icon.svg"></a>
+                <a href="https://bitbucket.org/"><img src="Assets/Bitbucket Icon.svg"></a>
+                <a href="https://www.dropbox.com/"><img src="Assets/Dropbox Icon.svg"></a>
+                <a href="https://www.twitch.tv/"><img src="Assets/Twitch Icon.svg"></a>
+                <a href="https://twitter.com/"><img src="Assets/Twitter Icon.svg"></a>
+            </footer>
     </body>
 </html>
 

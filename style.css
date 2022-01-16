@@ -1,0 +1,105 @@
+/* define variable */
+:root{
+    --purple:#372865;
+    --textGray: #707072;
+}
+
+*{
+    padding: 0; margin: 0;
+    /*border-box: all width/height of element will include the padding and border
+    so, it doesn't extra the height/width */
+    box-sizing: border-box;
+    font-family: Helvetica;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--purple);
+    color: white;
+}
+
+body{
+    background-color: #F6F9FE;
+
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* padding shorthand property: top-bottom left-right */
+    padding:0 5rem 0 10rem;
+
+}
+
+/* Start header style */
+
+/* refer to element nested in another element */
+.container header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.container header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container header nav ul li {
+    margin-right: 1rem;
+}
+
+.container header nav ul li a{
+    text-decoration: none;
+    color:var(--textGray);
+    padding: 1rem 1.3rem;
+    border-radius: .3rem;
+}
+
+.container header nav ul li  a:hover {
+    background-color: #F0AFC7;
+    color: black;
+    box-shadow: .1rem .1rem .1rem var(--textGray);
+}
+
+/* link join waitlist */
+#join{  
+    background-color:var(--purple);
+    color: white;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    border-radius: .3rem;
+}
+
+/* End header style */
+
+
+/* start section style */
+.content {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+.smaller-image{
+    width: 400px;
+}
+
+
+section{
+    display: inline-block;
+}
+
+.head1 {
+
+    background-color:  #372865;
+    color: #AA9FC7;
+    border-width: 20px;
+    border-radius: 10px;
+
+}  

@@ -1,150 +1,62 @@
-<style>
-    body{
-        background-color: #F6F9FE;
-        font-family: Helvetica;
-    }
-
-    .margin-left{
-        margin-left: 15px;
-    }
-
-    .margin-right{
-        margin-right: 15px;
-    }
-
-    /* .menu{
-        float: right;
-    } */
-
-    /* .logo {
-        margin-left: 25px;
-    } */
-
-    .float-right{
-        float: right;
-    }
-
-    #join{
-        border: 1px;
-        background-color: #372865;
-        color: white;
-        padding: 16px 20px 16px 20px;
-        border-radius: 5px;
-        margin-left: 0px;
-    }
-
-    a{
-        text-decoration: none;
-        color: #707072;
-        font-size: 16px;
-    }
-
-    a:link{
-        color: #707072;
-    }
-
-    a:visited{
-        color: #707072;
-    }
-
-    a:hover {
-        border: 1px;
-        background-color: #F0AFC7;
-        color: black;
-        padding: 10px;
-    }
-
-    a:active{
-        border: 1px;
-        background-color: #F0AFC7;
-        color: black;
-        padding: 10px;
-    }
-
-    .smaller-image{
-        width: 400px;
-    }
-
-    .margin-top {
-        margin-top: 30px;
-    }
-
-    .navigationBar {
-        margin: 40px 50px 0px 50px;
-    }
-    nav {
-        float: right;
-
-    }
-    /* refer to element inside another element like a tag nested in nav tag */
-    nav a{
-        padding-right: 20px;
-    }
-
-    .content {
-        display: flex;
-        align-items: center;
-        padding-top: 100px;
-    }
-
-    section{
-        display: inline-block;
-    }
-
-    /* p.head1 {
-
-        float: center;
-
-    }   */
-
-</style>
-
 <!DOCTYPE html5>
 <html>
     <head> 
+
+        <meta charset= "UTF-8">
+        <meta name= "viewport" content="width= device-width, initial-scale=1.0">
         <title>Commune</title>
+
+        <!-- link for custom css style file -->
+        <link rel="stylesheet" href="style.css"/>
+
     </head>
     <body>
-        <div class="navigationBar" >
-            <nav class="menu">
-                <!-- <a href="#" class="margin-left margin-right">Features</a> -->
-                <a href="#" >Features</a>
-                <!-- <a href="#" class="margin-left margin-right">Affiliates</a> -->
-                <a href="#" >Affiliates</a>
-                <!-- <a href="#" class="margin-left margin-right">Pricing</a> -->
-                <a href="#" >Pricing</a>
-                <!-- <a href="#" class="margin-left margin-right">Communities</a> -->
-                <a href="#" >Communities</a>
-                <a href="#" class="margin-left margin-right" id="join">Join Waitlist</a>
-            </nav>
+        <div class="container">
+            
+            <!-- website navigation bar -->
+            <header> 
+                <img class="logo" src="Assets/Logo.svg" alt="Logo" >
 
-            <img class="logo" src="Assets/Logo.svg" alt="Logo" >
-        </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" >Features</a></li>
+                        <li><a href="#" >Affiliates</a></li>
+                        <li><a href="#" >Pricing</a></li>
+                        <li><a href="#" >Communities</a></li>
+                        <li><a href="#" id="join">Join Waitlist</a></li>
+                    </ul>
+                </nav>
+
+            
+            </header>
+            <!-- end website navigation bar -->
         
-        <section class="content">
-            <div>
-            <p class="float-left margin-top head1">
-                we are now allowing early-access for users. 
-                Learn more. <br>
-            </p>
-            <h1 class="float-left margin-top">
-                Build a highly engaged community with no effort. <br>
-            </h1>
-            <p class="float-left margin-top">
-                Commune offers the tools you need to build a highly engaged community with
-                with little to no effort. Simply setup your Commune workspace, and manage everything 
-                from members to content from one central dashboard.
-             </p>
-            </div>
-            <div>
-                <img src="Assets/Illustration.png" class = "smaller-image margin-top float-right" >
-            </div> 
+            <!-- website content -->
+            <section class="content">
+                <div>
+                <p >
+                    we are now allowing early-access for users. 
+                    Learn more. <br>
+                </p>
+                <h1 >
+                    Build a highly engaged community with no effort. <br>
+                </h1>
+                <p >
+                    Commune offers the tools you need to build a highly engaged community with
+                    with little to no effort. Simply setup your Commune workspace, and manage everything 
+                    from members to content from one central dashboard.
+                </p>
+                </div>
+                <div>
+                    <img src="Assets/Illustration.png" class = "smaller-image margin-top float-right" >
+                </div> 
 
-        </section> 
+            </section> 
+            <!-- end website content -->
             
             
 
-            <footer class="margin-top">
+            <!-- <footer class="margin-top">
                 <a href="https://www.atlassian.com/"><img src="Assets/Atlassian Icon.svg"></a>
                 <a href="https://www.behance.net/"><img src="Assets/Behance Icon.svg"></a>
                 <a href="https://www.bing.com/"><img src="Assets/Bing Icon.svg"></a>
@@ -152,7 +64,8 @@
                 <a href="https://www.dropbox.com/"><img src="Assets/Dropbox Icon.svg"></a>
                 <a href="https://www.twitch.tv/"><img src="Assets/Twitch Icon.svg"></a>
                 <a href="https://twitter.com/"><img src="Assets/Twitter Icon.svg"></a>
-            </footer>
+            </footer> -->
+        </div>
     </body>
 </html>
 

@@ -10,7 +10,6 @@
     so, it doesn't extra the height/width */
     box-sizing: border-box;
     font-family: Helvetica;
-    text-transform: capitalize;
 }
 
 *::selection{
@@ -23,11 +22,12 @@ body{
 
 }
 
-.container{
+/* for easy padding */
+.container{ 
     height: 100vh;
     width: 100vw;
     /* padding shorthand property: top-bottom left-right */
-    padding:0 5rem 0 10rem;
+    padding:0 7rem 0 10rem;
 
 }
 
@@ -64,11 +64,11 @@ body{
 .container header nav ul li  a:hover {
     background-color: #F0AFC7;
     color: black;
-    box-shadow: .1rem .1rem .1rem var(--textGray);
+    box-shadow: .2rem .2rem .1rem var(--textGray);
 }
 
 /* link join waitlist */
-#join{  
+.container header nav ul li .join{  
     background-color:var(--purple);
     color: white;
     padding: 1rem 1.3rem 1rem 1.3rem;
@@ -79,10 +79,86 @@ body{
 
 
 /* start section style */
-.content {
+
+.container section{
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.container section .content{
+    /* flex will make the text in the same line */
+    display: block;
+    width: 52%;
+    justify-content: space-between;
+}
+
+.container section .content .user-access {
+
+    background-color: var(--purple);
+    color: #AA9FC7;
+    height: 4vh;
+    width: 29.5vw;
+    text-align: center;
+    padding: .4em;
+    border-width: 3rem;
+    border-radius: 5rem;
+
+}  
+
+.container section .content .user-access span a {
+
+    color: #BDB2D9;
+}  
+
+.container section .content h1{
+    /* to make the header not bold */
+    font-weight: normal;
+    color: #343151;
+    font-size: 3.5rem;
+    margin-top: .3em;
+}
+
+.container section .content .description{
+
+    color: var(--textGray);
+    /* space between text lines */
+    line-height: 1.5em;
+    margin-top: .3em;
+}
+
+.container section .content .email input{
+
+    padding: 1em;
+    margin-top: 1em;
+    width: 25vw;
+    border: .5px solid #ccc;
+    border-radius: .2rem;
+}
+
+.container section .content .email a button{
+
+    background-color:var(--purple);
+    color: white;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    border-radius: .3rem;
+}
+
+.container section .image{
+    /* allow the child relative to its position  */
+    position: relative; 
+    height: 60vh;
+    width: 30vw;
+    width: 52%;
+}
+
+.container section .image img{
+    /* you have to use with absolute :- top, bottom,left, or right */
+    position: absolute;
+    left: 10%;
+    top: .5%;
+    /* margin-top: 7rem; */
 }
 
 
@@ -90,16 +166,4 @@ body{
     width: 400px;
 }
 
-
-section{
-    display: inline-block;
-}
-
-.head1 {
-
-    background-color:  #372865;
-    color: #AA9FC7;
-    border-width: 20px;
-    border-radius: 10px;
-
-}  
+ 
